@@ -1,0 +1,21 @@
+{
+  "name": "expressjs",
+  "description": "This is photo online site",
+  "main": "index.js",
+  "authors": [
+    "Phan Thuan"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RedHair96/expressjs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^4.2.1",
+    "jquery": "^3.3.1"
+  }
+}
