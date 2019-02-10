@@ -1,0 +1,23 @@
+.album-cover {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 5px solid gray;
+}
+
+.container {
+    margin: 0px;
+    padind: 0px;
+}
+.row {
+    width:100%;
+}
+
+.image-cover {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 5px;
+}
+
+.album-cover img {
+    width: 100%;
+}
