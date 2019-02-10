@@ -6,8 +6,14 @@ const port = 3000;
 app.use(express.static('public'));
 app.use('/components', express.static('bower_components'));
 
+// Views
+app.set('views', './views');
+app.set('view engine', 'pug');
+
 // Routing
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/pug', (req, res) => {
+    res.render('index', { title: 'Hey', message: 'Hello there!' });
+});
 
 // Start server
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
