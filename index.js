@@ -11,7 +11,7 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 // Routing
-app.get('/pug', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');
 });
 

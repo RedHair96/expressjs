@@ -1,25 +1,6 @@
-html
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title Hello Boostrap
-    meta(name="description" content="")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css")
-    link(rel="stylesheet" href="css/style.css")
-  body
-    nav(class="navbar navbar-expand-lg navbar-light bg-primary")
-      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation")
-        span(class="navbar-toggler-icon")
-      div(class="collapse navbar-collapse" id="main-nav")
-        ul(class="navbar-nav")
-          li(class="nav-item active")
-            a(class="nav-link" href="/") Home
-          li(class="nav-item")
-            a(class="nav-link" href="/albums") Albums
-          li(class="nav-item")
-            a(class="nav-link" href="/photo") Photo
-    h1 Homepage
-    script(src="components/jquery/dist/jquery.js")
-    script(src="components/bootstrap/dist/js/bootstrap.js")
-
+extends layouts/default.pug
+block home_nav
+  li(class="nav-item active")
+    a(class="nav-link" href="/") Home
+block content
+  h1 Homepage
