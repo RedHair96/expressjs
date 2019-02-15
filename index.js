@@ -46,6 +46,9 @@ app.get('/photo-thu', (req, res) => {
 app.get('/photo-dong', (req, res) => {
     res.render('photo-dong', {album_dong: photos.slice(18, 24)});
 });
+app.get('/calc', (req, res)=> {
+    res.send("a + b = " + req.query.a + req.query.b);
+});
 
 // Start server
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
