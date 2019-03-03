@@ -1,0 +1,33 @@
+extends layouts/default.pug
+
+block contact_nav
+  li(class="nav-item active")
+    a(class="nav-link" href="/contact") Contact
+
+block content
+  h2 HI, here we are!
+  div(class="container-fluid")
+    div(class="row")
+      div(class="col-lg-3")
+      if (alert_success || alert_error)
+        div(class="col-lg-6")
+          if alert_success
+            div(class="alert alert-success") #{alert_success}
+          else
+            div(class="alert alert-danger") #{alert_error}
+    div(class="row")
+      div(class="col-lg-3")
+      div(class="col-lg-6")
+        form(class="" action="" method ="post")
+          div(class="form-group")
+            label(for="name") Name *
+            input(name="name" type="text" class="form-control" id="name" placeholder="Type your name...")
+          div(class="form-group")
+            label(for="Email") Email *
+            input(name="email" type="text" class="form-control" id="email" placeholder="Type your email...")
+          div(class="form-group")
+            label(for="message") Message *
+            textarea(name="message" cols="80" rows="8" class="form-control" id="message" placeholder="Type your message..")
+          div(class="form-group")
+            button(type="reset" class="btn btn-default") Reset
+            button(type="submit" class="btn btn-primary" style="float:-right") Send

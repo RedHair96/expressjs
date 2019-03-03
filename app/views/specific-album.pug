@@ -1,13 +1,13 @@
 extends layouts/default.pug
 
-block photos_nav
+block albums_nav
   li(class="nav-item active")
-    a(class="nav-link" href="/photo") Photo
+    a(class="nav-link" href="/albums") Album
 
 block content
-  h1 Dong
+  h1 #{album[0].name}
   div(class="container-fluid")
     div(class="row")
-      each val in album_dong
+      each val in album
         div(class="col-xl-3 col-md-4 col-sm-6")
-          img(class="image-cover" src=val alt="")
+          img(class="image-cover" src='../'+val.url alt="")

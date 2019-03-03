@@ -9,5 +9,5 @@ block content
       each val in albums
         div(class="col-xl-3 col-md-4 col-sm-6")
           div(class="album-cover")
-            a(href= '/' + val.page) 
-              img(src= '/' + val.avatar alt="")
+            a(href= '/albums/' + val.page) 
+              img(src= '../' + val.avatar alt="")

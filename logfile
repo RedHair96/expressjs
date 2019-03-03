@@ -1,0 +1,2 @@
+2019-03-01 18:02:10.122 +07 [545] FATAL:  data directory "/Users/redhair96/Desktop/expressjs/your/data/path" has invalid permissions
+2019-03-01 18:02:10.122 +07 [545] DETAIL:  Permissions should be u=rwx (0700) or u=rwx,g=rx (0750).

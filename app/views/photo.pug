@@ -1,0 +1,22 @@
+extends layouts/default.pug
+
+block photos_nav
+  li(class="nav-item active")
+    a(class="nav-link" href="/photo") Photo
+
+block content
+  h1 Photo
+
+  form(class="form-inline" action="/photo")
+    div(class="form-group")
+      input(name="keyword" type="text" class="form-control" id="exampleInputName2" placeholder="Type picture name...")
+    div(class="form-group")
+      button(type="submit" class="btn btn-primary") Search
+
+  div(class="container-fluid")
+    div(class="row")
+      if (photos.length == 0)
+        p Không tìm thấy kết quả.
+      each val in photos
+        div(class="col-xl-3 col-md-4 col-sm-6")
+          img(class="image-cover" src=val.url alt="")
